@@ -1,0 +1,62 @@
+create database movie;
+use movie;
+describe table imdb_movie_dataset;
+select * from imdb_movie_dataset;
+#1.find the top  5 highest rating movie 
+select title, rating
+from imdb_movie_dataset
+ order by rating desc 
+ limit 5;
+ 
+ # 2.list the all movie released after 2010 with the rating greater  than 8.5
+ select title,year ,rating 
+     from imdb_movie_dataset 
+     where year > 2010 and rating > 8.5;
+     
+#3.count how many movie were released each year
+   select year, count(*) as total_movies 
+          from imdb_movie_dataset  
+          group by year order by year asc;
+          
+   #4. find the average rating by each genere
+    select genre , avg(rating) as avg_rating 
+             from imdb_movie_dataset
+                    group by genre order by avg_rating desc;
+                    
+  # 5. which direction has directed the most movie
+  select director , count(*) as total_movie 
+      from imdb_movie_dataset 
+      group by director order by total_movie desc;
+      
+  # 6. find the movie with voter more than the average voter
+  select title,votes from imdb_movie_dataset 
+                where votes > (select avg(votes) from imdb_movie_dataset);
+                
+  # 7 get the total number of movie for each director who has more than 5 movie
+   select director,count(*) as total_movie 
+           from imdb_movie_dataset 
+           group by director having count(*)>5
+                 order by total_movie desc;
+                 
+      # 8. list the movie directed by christoper nolan
+       select title, year, rating from imdb_movie_dataset 
+           where director ='christopher nolan' 
+           order by year;
+           
+  # 9. second highest rated movie 
+  select distinct rating ,title
+     from imdb_movie_dataset  order by rating 
+            desc limit 1 offset 1;
+    
+    #10. get the top 3 rated movie per year 
+   SELECT *
+FROM (
+  SELECT title, year, rating,
+         RANK() OVER (PARTITION BY year ORDER BY rating DESC) AS rnk
+  FROM imdb_movies_dataset
+) ranked
+WHERE rnk <= 3;
+
+# 10. SHOW al movie released after 2015 with a rating above 8 
+   select title, year ,rating from imdb_movie_dataset 
+           where year >2015 and rating >8 order by rating desc;
