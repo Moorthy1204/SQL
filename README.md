@@ -1,10 +1,8 @@
-# SQL
-Certainly! Here's the `README.md` **without any SQL code**, and structured to include:
+# SQL Challenge Solutions
+This repository contains my solutions to a series of SQL challenges completed over the course of multiple weeks. These challenges helped me master key SQL concepts, including database design, data aggregation, optimization, and complex queries. Below are the case studies I have worked on, along with the approach and techniques used for each challenge.
 
-* ✅ Challenge Completed
-* 📋 Challenge Overview
-* 🛠️ Technologies Used
-* ⚙️ Setup Instructions
+#  Challenge Completed
+  1.
 
 ---
 
