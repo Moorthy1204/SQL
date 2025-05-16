@@ -11,7 +11,7 @@ Here’s an updated **Challenge Overview** section specifically for the **Hospit
 
 ---
 
-## 📋 Challenge Overview – 🏥 Hospital Management
+1. Hospital Management
 
 This set of SQL challenges focuses on analyzing hospital data to extract meaningful insights about patients, doctors, and visits. The problems are designed to simulate real-world healthcare scenarios and require the use of **SQL JOINs**, aggregations, and filtering techniques.
 
