@@ -55,11 +55,4 @@ This set of SQL challenges revolves around analyzing sales data from a supermark
 
 These challenges are structured to strengthen your skills in **data aggregation**, **sorting**, **grouping**, and **filtering**, using only one table. Ideal for scenarios where data comes from POS (point of sale) systems or export reports without relational dependencies.
 
----
-
-Would you like me to add a similar overview for the **Supermarket domain** too?
-
-
-
----
 
