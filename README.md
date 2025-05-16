@@ -27,11 +27,52 @@ This set of SQL challenges focuses on analyzing hospital data to extract meaning
 * Track **doctor-patient relationships**, visit history, and department-level performance.
 * Handle edge cases like **missing data**, **duplicate visits**, or **inactive doctors**.
 
-These challenges test your ability to combine data from multiple related tables and generate reports commonly used in healthcare analytics and hospital dashboards.
+Here’s the **Challenge Overview** section for the **Netflix domain**, as requested — with a clear note that **JOINs are not used** in this set of challenges:
 
 ---
 
-Would you like similar JOIN-based overviews for Netflix and Supermarket domains too?
+## 📋 Challenge Overview – 🎬 Netflix Streaming Analytics
+
+This set of SQL challenges focuses on analyzing **viewer behavior and content performance** on a streaming platform similar to Netflix. The dataset is structured to allow deep insights using a single table or minimal table relationships, without requiring JOIN operations.
+
+### Key Objectives:
+
+* Identify the **top 5 most-watched movies or shows** based on user views.
+* Analyze **daily, weekly, or monthly streaming trends**.
+* Calculate the **average watch time per user** or per content title.
+* Determine **active users** and **engagement rates**.
+* Explore **genre popularity** and content preferences.
+* Uncover **binge-watching patterns** or peak streaming hours.
+
+These challenges are ideal for practicing **aggregation**, **GROUP BY**, **ORDER BY**, **HAVING**, and **filtering operations** in SQL — all done without using JOINs. The dataset assumes a simplified streaming log format that represents typical user interaction data.
+
+Here’s the **Challenge Overview** section for the **Supermarket domain**, with a note that **JOINs are not used**:
+
+---
+
+## 📋 Challenge Overview – 🛒 Supermarket Sales Analysis
+
+This set of SQL challenges revolves around analyzing sales data from a supermarket. The focus is on extracting actionable insights directly from a single sales table or a flat dataset structure, without the need for JOIN operations.
+
+### Key Objectives:
+
+* Identify the **top-performing product categories** based on total sales.
+* Track **daily, weekly, or monthly revenue trends**.
+* Determine **best-selling products** and their sales volume.
+* Calculate **total revenue per customer** or **per region**.
+* Analyze **customer purchase frequency** and spending patterns.
+* Monitor **sales performance over time** to spot growth or decline.
+
+These challenges are structured to strengthen your skills in **data aggregation**, **sorting**, **grouping**, and **filtering**, using only one table. Ideal for scenarios where data comes from POS (point of sale) systems or export reports without relational dependencies.
+
+---
+
+Let me know if you want me to bundle all three domain overviews into a final cleaned-up README or provide sample `.sql` files for each!
+
+
+---
+
+Would you like me to add a similar overview for the **Supermarket domain** too?
 
 
 
